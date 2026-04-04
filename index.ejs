@@ -1,0 +1,92 @@
+<%- include('Partials/header.ejs') %>
+
+<body>
+<%- include('Partials/main_nav.ejs') %>
+
+<div class="page-wrapper">
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-grid-bg"></div>
+        <div class="hero-glow"></div>
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6">
+                    <p class="hero-tag">Network &amp; IT Security</p>
+                    <h1>
+                        Hi, I'm <span class="accent-word">Daniel.</span><br>
+                        Future IT Network<br>
+                        Professional
+                    </h1>
+                    <p class="hero-desc">
+                        Student at Ontario Tech University studying Networking &amp; IT Security. 
+                        Building skills in cybersecurity, networking, and troubleshooting.
+                    </p>
+                    <div class="d-flex flex-wrap gap-3">
+                        <a href="/about" class="btn-primary-custom">
+                            <i class="fa-solid fa-user fa-sm"></i> Learn About Me
+                        </a>
+                        <a href="/project" class="btn-ghost-custom">
+                            <i class="fa-solid fa-list-check fa-sm"></i> View Projects
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="hero-image-wrap">
+                        <img src="/Assets/images/Networking.png" alt="Networking illustration">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HIGHLIGHTS -->
+    <section class="section section-alt">
+        <div class="container">
+            <p class="section-label">What I Do</p>
+            <h2 class="section-title">Areas of Focus</h2>
+            <p class="section-subtitle">
+                Exploring the full spectrum of network security — from protocol-level analysis to applied cryptography.
+            </p>
+            <div class="row g-4">
+                <div class="col-md-4 reveal">
+                    <div class="card-custom">
+                        <div class="card-icon"><i class="fa-solid fa-globe"></i></div>
+                        <h3>Networking</h3>
+                        <p>Studying protocols and troubleshooting strategies for modern network infrastructures.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 reveal">
+                    <div class="card-custom">
+                        <div class="card-icon"><i class="fa-solid fa-lock"></i></div>
+                        <h3>Cyber Security</h3>
+                        <p>Hands-on experience with substitution ciphers, Playfair, Caesar, RSA, and product ciphers.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 reveal">
+                    <div class="card-custom">
+                        <div class="card-icon"><i class="fa-solid fa-code"></i></div>
+                        <h3>Software Dev</h3>
+                        <p>Building Python applications with GUI interfaces and web development using Node.js and Express.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section">
+        <div class="container text-center">
+            <p class="section-label s3" style="justify-content:center;">Get In Touch</p>
+            <h2 class="section-title" style="margin:0 auto 0.5rem;">Interested in connecting?</h2>
+            <p class="section-subtitle" style="margin:0 auto 2rem;">
+                I'm always open to new opportunities, collaborations, or just a conversation about networking
+            </p>
+            <a href="/contact" class="btn-primary-custom">
+                <i class="fa-regular fa-paper-plane fa-sm"></i> Send a Message
+            </a>
+        </div>
+    </section>
+</div>
+
+<%- include('Partials/footer.ejs') %>
+</body>
