@@ -1,19 +1,20 @@
+<%- include('Partials/header.ejs') %>
 
+<body>
+<%- include('Partials/main_nav.ejs') %>
 
-
-<%- include Partials/header.ejs%>
-
-<%- include Partials/main_nav.ejs%>
-
-<div class="container">
-
-<h1><%= message %></h1>
-<h2><%= error.status %></h2>
-<pre><%= error.stack %></pre>
-
+<div class="page-wrapper">
+    <div class="error-page">
+        <div class="text-center">
+            <span class="error-code"><%= error.status || 500 %></span>
+            <h1 class="section-title mt-2"><%= message || 'Something went wrong.' %></h1>
+            <p class="error-msg mt-2"><%= error.stack %></p>
+            <a href="/" class="btn-primary-custom mt-4 d-inline-flex">
+                <i class="fa-solid fa-house fa-sm"></i> Back to Home
+            </a>
+        </div>
+    </div>
 </div>
-    
-<%- include Partials/footer.ejs%>
-    
 
-
+<%- include('Partials/footer.ejs') %>
+</body>
