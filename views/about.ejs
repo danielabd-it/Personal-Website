@@ -11,9 +11,18 @@
             <div class="divider"></div>
 
             <div class="row g-5 align-items-start">
-                <!-- LEFT — profile -->
-                <div class="col-lg-7 reveal">
+                <!-- LEFT — profile + video -->
+                <div class="col-lg-5 reveal">
                     <img src="/Assets/images/Profile.png" alt="Daniel Borrell Diaz" class="about-profile-img">
+
+                    <div class="about-video-wrap mt-4">
+                        <video width="100%" controls poster="/Assets/images/sky.png" preload="auto" autoplay loop muted id="myVid">
+                            <source src="/Assets/images/sky.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <button class="play-btn" onclick="PlayPause()">
+                        <i class="fa-solid fa-play fa-xs"></i> Toggle Play / Pause
+                    </button>
                 </div>
 
                 <!-- RIGHT — bio + stats + skills -->
@@ -34,7 +43,7 @@
                     <div class="skill-list">
                         <span class="skill-pill">IT Support & Ticketing</span>
                         <span class="skill-pill">Networking & Routing</span>
-                        <span class="skill-pill">Network Securitys</span>
+                        <span class="skill-pill">Network Diagnostics</span>
                         <span class="skill-pill">Cloud Computing</span>
                         <span class="skill-pill">Systems Administration</span>
                         <span class="skill-pill">Cybersecurity</span>
