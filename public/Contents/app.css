@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;600;700;800&display=swap');
 
 :root {
-  --bg:          #ffffff;
-  --bg2:         #f6f8fb;
+  --bg:          #f3f8fe;
+  --bg2:         #e4f0fd;
   --surface:     #ffffff;
-  --surface2:    #eef2f7;
-  --border:      #e2e8f0;
+  --surface2:    #d9eafb;
+  --border:      #cfe1f5;
   --accent:      #0057d9;
   --accent2:     #0066ff;
   --accent-dim:  rgba(0, 102, 255, 0.08);
@@ -32,7 +32,7 @@ body {
 }
 
 .navbar {
-  background: rgba(255, 255, 255, 0.92) !important;
+  background: rgba(228, 240, 253, 0.92) !important;
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   border-bottom: 1px solid var(--border);
@@ -100,6 +100,7 @@ body {
   align-items: center;
   overflow: hidden;
   padding: 4rem 0;
+  background: linear-gradient(180deg, #dbeafe 0%, #eaf4ff 55%, var(--bg) 100%);
 }
 
 .hero-grid-bg {
@@ -225,7 +226,7 @@ body {
 .section {
   padding: 5rem 0;
 }
-.section-alt { background: var(--bg2); }
+.section-alt { background: linear-gradient(180deg, #e4f0fd 0%, #d6e8fb 100%); }
 
 .section-label {
   font-family: var(--font-mono);
@@ -255,7 +256,6 @@ body {
   margin-bottom: 3rem;
 }
 
-/* ── CARDS ── */
 .card-custom {
   background: var(--surface);
   border: 1px solid var(--border);
@@ -272,8 +272,8 @@ body {
 
 .card-icon {
   width: 44px; height: 44px;
-  background: var(--accent-dim);
-  border: 1px solid rgba(0, 102, 255, 0.2);
+  background: #d6e8fb;
+  border: 1px solid rgba(0, 102, 255, 0.25);
   border-radius: 6px;
   display: flex;
   align-items: center;
@@ -297,7 +297,6 @@ body {
   line-height: 1.75;
 }
 
-/* ── PROJECT CARDS ── */
 .project-card {
   background: var(--surface);
   border: 1px solid var(--border);
@@ -355,7 +354,6 @@ body {
   line-height: 1.75;
 }
 
-/* ── ABOUT PAGE ── */
 .about-profile-img {
   width: 100%;
   max-width: 320px;
@@ -409,22 +407,20 @@ body {
   text-transform: uppercase;
 }
 
-/* ── SKILLS PILLS ── */
 .skill-list { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 1rem; }
 .skill-pill {
   font-family: var(--font-mono);
   font-size: 0.72rem;
   letter-spacing: 0.06em;
-  color: var(--text-muted);
-  background: var(--bg2);
-  border: 1px solid var(--border);
+  color: #2a4a72;
+  background: #d6e8fb;
+  border: 1px solid #b9d5f3;
   border-radius: 3px;
   padding: 0.25rem 0.65rem;
   transition: color 0.2s, border-color 0.2s;
 }
 .skill-pill:hover { color: var(--accent); border-color: rgba(0, 102, 255, 0.35); }
 
-/* ── CONTACT / FORM ── */
 .form-wrap {
   background: var(--surface);
   border: 1px solid var(--border);
@@ -502,7 +498,6 @@ textarea.form-control { min-height: 130px; resize: vertical; }
 }
 .btn-reset-custom:hover { color: var(--danger); border-color: var(--danger); }
 
-/* ── FOOTER ── */
 footer {
   background: var(--bg2);
   border-top: 1px solid var(--border);
@@ -528,14 +523,12 @@ footer {
 }
 .footer-link:hover { color: var(--accent2); transform: translateY(-2px); }
 
-/* ── DIVIDER ── */
 .divider {
   height: 1px;
-  background: linear-gradient(90deg, transparent, #cbd5e1, transparent);
+  background: linear-gradient(90deg, transparent, #9cc3ee, transparent);
   margin: 2rem 0;
 }
 
-/* ── REVEAL ANIMATION ── */
 .reveal {
   opacity: 0;
   transform: translateY(24px);
@@ -543,7 +536,6 @@ footer {
 }
 .reveal.visible { opacity: 1; transform: translateY(0); }
 
-/* ── ERROR PAGE ── */
 .error-page {
   min-height: calc(100vh - var(--nav-h));
   display: flex;
@@ -566,7 +558,6 @@ footer {
   margin-top: 0.5rem;
 }
 
-/* ── TERMINAL CURSOR BLINK ── */
 .cursor::after {
   content: '_';
   color: var(--accent);
